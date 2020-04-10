@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Generated XML doc
+/Trending.Command.Api/Trending.Command.Api.xml

@@ -1,7 +1,7 @@
 # trending-command-service
 Trending CQRS Sample - Command microservice
 
-# What You Need for This
+## What You Need for This
  + Visual Studio 2019 - *or higher* - incl.:
     + C# stuff
     + .NET Core 3.1
@@ -12,8 +12,5 @@ Trending CQRS Sample - Command microservice
     + TortoiseGit
     + Notepad++ including XML Tools
 
-# How This Was Created
-Via Visual Studio project templates:
-
-![Web-App](VS.ASP.NET.Core.Web.App.png)
-![Web-API](VS.ASP.NET.Core.Web.API.png)
+## How This Was Created
+&rarr; [HowCreated.md](HowCreated.md)
