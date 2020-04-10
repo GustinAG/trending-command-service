@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F6917068-3F4B-4CA6-9966-319C23210ABF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		VS.ASP.NET.Core.Web.API.png = VS.ASP.NET.Core.Web.API.png
+		VS.ASP.NET.Core.Web.App.png = VS.ASP.NET.Core.Web.App.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.Api", "Trending.Command.Api\Trending.Command.Api.csproj", "{E874E23E-51D6-4261-B796-099D1A0AB087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E874E23E-51D6-4261-B796-099D1A0AB087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E874E23E-51D6-4261-B796-099D1A0AB087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E874E23E-51D6-4261-B796-099D1A0AB087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E874E23E-51D6-4261-B796-099D1A0AB087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C638E59E-2E48-4E71-82A2-6735D72D26CE}
+	EndGlobalSection
+EndGlobal
