@@ -14,3 +14,15 @@ Trending CQRS Sample - Command microservice
 
 ## How This Was Created
 &rarr; [HowCreated.md](HowCreated.md)
+
+## Docker Basics
+In a command prompt run as administrator:
+```Batchfile
+docker images
+docker ps -a
+docker exec -it Trending.Command.Api bash
+```
+
+```Bash
+hostname -i
+```
