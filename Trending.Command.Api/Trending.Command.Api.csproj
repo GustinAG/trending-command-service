@@ -29,5 +29,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Trending.Command.BusinessLogic\Trending.Command.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Trending.Command.Contracts\Trending.Command.Contracts.csproj" />
+  </ItemGroup>
+
 
 </Project>

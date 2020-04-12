@@ -1,6 +1,12 @@
 # trending-command-service  <img src="under-construction.png" alt="under-construction" width="100" align="right" />
 Trending CQRS Sample - Command microservice
 
+## Goal of This
+Demontsrating these architecture paterns within working code in a very simplified way.
+This might help better understand them.
+
+On the other hand, with the help of this sample code, you will ***not*** see the complictions that come with a huge, complex project.
+
 ## What You Need for This
  + Visual Studio 2019 - *or higher* - incl.:
     + C# stuff
@@ -27,3 +33,10 @@ docker exec -it Trending.Command.Api bash
 hostname -i
 ls -ln
 ```
+
+## Architecture Patterns <br /> <small> *covered in this sample* </small>
+ + **C**ommand **Q**uery **R**esponsibility **S**egragation
+ + Layers
+
+### See Also
+ + &rarr; [CQRS *(Fowler)*](https://martinfowler.com/bliki/CQRS.html)
