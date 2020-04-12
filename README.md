@@ -25,4 +25,5 @@ docker exec -it Trending.Command.Api bash
 
 ```Bash
 hostname -i
+ls -ln
 ```
