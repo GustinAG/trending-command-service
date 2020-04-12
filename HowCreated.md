@@ -3,7 +3,31 @@
 ![Web-App](VS.ASP.NET.Core.Web.App.png)
 ![Web-API](VS.ASP.NET.Core.Web.API.png)
 
-## Further Stuff
+## Further VS Stuff
  + &rarr; [Get started with Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-3.1&tabs=visual-studio)
  + &rarr; [Visual Studio 2019 Launch: Docker all the things!](https://youtu.be/Tlswgxl_Xyk)
  + &rarr; [Dependency injection into controllers in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/dependency-injection?view=aspnetcore-3.1)
+
+## MongoDB
+ + &rarr; [Getting Started With MongoDB As A Docker Container Deployment](https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-container-deployment)
+ + &rarr; [MongoDB C#/.NET Driver](https://docs.mongodb.com/drivers/csharp)
+ + &rarr; [Quick Start: C# and MongoDB - Starting and Setup](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)
+ + &rarr; [Quick Start: C# and MongoDB - Creating Documents](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb--creating-documents)
+
+```Batchfile
+docker pull mongo
+docker run -d -p 27017-27019:27017-27019 --name mongodb mongo
+docker exec -it mongodb bash
+```
+
+```Bash
+hostname -i
+mongo
+```
+
+```SQL
+show dbs
+use trendingevents
+db.articleevents.find()
+db.articleevents.find().sort({ $natural: 1 })
+```

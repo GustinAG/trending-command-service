@@ -1,4 +1,4 @@
-# trending-command-service  <img src="under-construction.png" alt="under-construction" width="100" align="right" />
+# trending-command-service
 Trending CQRS Sample - Command microservice
 
 ## Goal of This
