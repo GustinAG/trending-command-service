@@ -15,15 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.Api", "Trending.Command.Api\Trending.Command.Api.csproj", "{E874E23E-51D6-4261-B796-099D1A0AB087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.Api.Tests", "Trending.Command.Api.Tests\Trending.Command.Api.Tests.csproj", "{5D12CA7A-FB4E-4FC9-AF88-088F704C549A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.Api.Tests", "Trending.Command.Api.Tests\Trending.Command.Api.Tests.csproj", "{5D12CA7A-FB4E-4FC9-AF88-088F704C549A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.Contracts", "Trending.Command.Contracts\Trending.Command.Contracts.csproj", "{6E5B7C60-66F6-4C13-9823-C2AF0184ADA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.Contracts", "Trending.Command.Contracts\Trending.Command.Contracts.csproj", "{6E5B7C60-66F6-4C13-9823-C2AF0184ADA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.BusinessLogic", "Trending.Command.BusinessLogic\Trending.Command.BusinessLogic.csproj", "{C4AC8A9E-4C2E-4E32-8CA1-31ACC97FEDF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.BusinessLogic", "Trending.Command.BusinessLogic\Trending.Command.BusinessLogic.csproj", "{C4AC8A9E-4C2E-4E32-8CA1-31ACC97FEDF0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{E69AC2DC-CC4D-4133-8A5C-440549893548}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Business", "2 - Business", "{7A091781-A409-41B9-B9A7-60EE00DA6E04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{541E4FC9-94FE-4CBF-8B37-112623EFFCF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.Repositories", "Trending.Command.Repositories\Trending.Command.Repositories.csproj", "{7B29D2F8-DEAB-4204-AFC5-5E592CFEB1C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.BusinessLogic.Tests", "Trending.Command.BusinessLogic.Tests\Trending.Command.BusinessLogic.Tests.csproj", "{1C8FFF3D-A236-453E-A805-C8296C0182B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +53,14 @@ Global
 		{C4AC8A9E-4C2E-4E32-8CA1-31ACC97FEDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4AC8A9E-4C2E-4E32-8CA1-31ACC97FEDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4AC8A9E-4C2E-4E32-8CA1-31ACC97FEDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B29D2F8-DEAB-4204-AFC5-5E592CFEB1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B29D2F8-DEAB-4204-AFC5-5E592CFEB1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B29D2F8-DEAB-4204-AFC5-5E592CFEB1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B29D2F8-DEAB-4204-AFC5-5E592CFEB1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8FFF3D-A236-453E-A805-C8296C0182B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8FFF3D-A236-453E-A805-C8296C0182B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8FFF3D-A236-453E-A805-C8296C0182B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8FFF3D-A236-453E-A805-C8296C0182B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +69,8 @@ Global
 		{E874E23E-51D6-4261-B796-099D1A0AB087} = {E69AC2DC-CC4D-4133-8A5C-440549893548}
 		{5D12CA7A-FB4E-4FC9-AF88-088F704C549A} = {E69AC2DC-CC4D-4133-8A5C-440549893548}
 		{C4AC8A9E-4C2E-4E32-8CA1-31ACC97FEDF0} = {7A091781-A409-41B9-B9A7-60EE00DA6E04}
+		{7B29D2F8-DEAB-4204-AFC5-5E592CFEB1C9} = {541E4FC9-94FE-4CBF-8B37-112623EFFCF6}
+		{1C8FFF3D-A236-453E-A805-C8296C0182B9} = {7A091781-A409-41B9-B9A7-60EE00DA6E04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C638E59E-2E48-4E71-82A2-6735D72D26CE}

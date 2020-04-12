@@ -36,7 +36,9 @@ ls -ln
 
 ## Architecture Patterns <br /> <small> *covered in this sample* </small>
  + **C**ommand **Q**uery **R**esponsibility **S**egragation
- + Layers
+ + **I**nversion **o**f **C**ontrol / **D**ependency **I**njection
+ + Repository
 
 ### See Also
  + &rarr; [CQRS *(Fowler)*](https://martinfowler.com/bliki/CQRS.html)
+ + &rarr; [Inversion of Control Containers and the Dependency Injection pattern *(Fowler)*](https://martinfowler.com/articles/injection.html)

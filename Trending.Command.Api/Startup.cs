@@ -3,12 +3,12 @@ using System.IO;
 using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Trending.Command.BusinessLogic;
 using Trending.Command.Contracts;
+using Trending.Command.Repositories;
 
 namespace Trending.Command.Api
 {
@@ -17,17 +17,11 @@ namespace Trending.Command.Api
         private const string SwaggerApiName = "Trending Command API";
         private const string SwaggerApiVersion = "v0";
 
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IArticleReadScorer, Scorer>();
+            services.AddTransient<IArticlesRepository, ArticlesRepository>();
 
             services.AddControllers();
 
