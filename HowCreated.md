@@ -19,15 +19,14 @@ docker pull mongo
 docker run -d -p 27017-27019:27017-27019 --name mongodb mongo
 docker exec -it mongodb bash
 ```
+<center> &darr; </center>
 
 ```Bash
 hostname -i
 mongo
 ```
+<center> &darr; </center>
 
 ```SQL
 show dbs
-use trendingevents
-db.articleevents.find()
-db.articleevents.find().sort({ $natural: 1 })
 ```

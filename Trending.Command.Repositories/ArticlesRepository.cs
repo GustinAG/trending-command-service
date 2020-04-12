@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using System;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using Trending.Command.Contracts;
 
@@ -16,7 +17,8 @@ namespace Trending.Command.Repositories
             var dbClient = new MongoClient(MongoUrl);
             var db = dbClient.GetDatabase(DbName);
             var events = db.GetCollection<BsonDocument>(CollectionName);
-            var newEvent = new BsonDocument { { "article_Id", articleId }, { "score", score } };
+            var timeStamp = DateTime.UtcNow.ToString("s");
+            var newEvent = new BsonDocument { { "timestamp", timeStamp }, { "article_Id", articleId }, { "score", score } };
 
             events.InsertOne(newEvent);
         }

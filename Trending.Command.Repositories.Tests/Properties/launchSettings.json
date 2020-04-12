@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Trending.Command.Repositories.Tests": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
