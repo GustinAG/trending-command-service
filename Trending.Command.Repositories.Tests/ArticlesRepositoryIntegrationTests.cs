@@ -1,17 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Trending.Command.Contracts;
 
 namespace Trending.Command.Repositories.Tests
 {
     [TestClass]
     public class ArticlesRepositoryIntegrationTests
     {
-        // TODO: This doesn't work - no idea why!
-        // See also: https://stackoverflow.com/questions/31314245/a-timeout-occured-after-30000ms-selecting-a-server-using-compositeserverselector
+        private const string LocalIp = "127.0.0.1";
+        private static readonly IMongoConfig Config = new MongoConfig(LocalIp);
+
         [TestMethod]
         public void AddScore_ShouldRunWithoutException()
         {
             // Arrange
-            var repository = new ArticlesRepository();
+            var repository = new ArticlesRepository(Config);
 
             // Act
             repository.AddScore(8, 2);

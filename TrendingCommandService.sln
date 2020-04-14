@@ -30,7 +30,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.Repositori
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.BusinessLogic.Tests", "Trending.Command.BusinessLogic.Tests\Trending.Command.BusinessLogic.Tests.csproj", "{1C8FFF3D-A236-453E-A805-C8296C0182B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Command.Repositories.Tests", "Trending.Command.Repositories.Tests\Trending.Command.Repositories.Tests.csproj", "{A8C708A5-7F05-4A7E-9B45-D84F5652D31A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Command.Repositories.Tests", "Trending.Command.Repositories.Tests\Trending.Command.Repositories.Tests.csproj", "{A8C708A5-7F05-4A7E-9B45-D84F5652D31A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

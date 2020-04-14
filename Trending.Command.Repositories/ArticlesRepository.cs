@@ -7,14 +7,18 @@ namespace Trending.Command.Repositories
 {
     public class ArticlesRepository : IArticlesRepository
     {
-        private const string MongoIp = "172.17.0.3";     // TODO: Fix this magic IP in Docker Compose!
-        private const string MongoUrl = "mongodb://" + MongoIp + ":27017";
         private const string DbName = "trendingevents";
         private const string CollectionName = "articleevents";
+        private readonly IMongoConfig _config;
+
+        public ArticlesRepository(IMongoConfig config)
+        {
+            _config = config;
+        }
 
         public void AddScore(int articleId, int score)
         {
-            var dbClient = new MongoClient(MongoUrl);
+            var dbClient = new MongoClient(_config.MongoUrl);
             var db = dbClient.GetDatabase(DbName);
             var events = db.GetCollection<BsonDocument>(CollectionName);
             var timeStamp = DateTime.UtcNow.ToString("s");
