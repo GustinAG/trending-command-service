@@ -21,7 +21,7 @@ namespace Trending.Command.Repositories
             var dbClient = new MongoClient(_config.MongoUrl);
             var db = dbClient.GetDatabase(DbName);
             var events = db.GetCollection<BsonDocument>(CollectionName);
-            var timeStamp = DateTime.UtcNow.ToString("s");
+            var timeStamp = new BsonDateTime(DateTime.UtcNow);
             var newEvent = new BsonDocument { { "timestamp", timeStamp }, { "article_Id", articleId }, { "score", score } };
 
             events.InsertOne(newEvent);

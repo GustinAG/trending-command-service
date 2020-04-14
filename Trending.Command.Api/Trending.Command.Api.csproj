@@ -7,7 +7,7 @@
     <Product>Trending CQRS Sample - Command API</Product>
     <Copyright>(c) Gustin AG 2020</Copyright>
     <RepositoryUrl>https://github.com/GustinAG/trending-command-service</RepositoryUrl>
-    <Version>0.0.0.2</Version>
+    <Version>0.0.0.3</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
