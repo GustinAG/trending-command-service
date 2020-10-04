@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  trending-command-service:
+    image: trending-command-service:dev
+    build:
+      context: .
+      dockerfile: Trending.Command.Api/Dockerfile
+      args:
+        - SDK_VERSION=3.1.301
+
+networks:
+  default:
+    external: true
+    name: shared-infrastructure-network

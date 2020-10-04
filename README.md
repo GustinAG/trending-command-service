@@ -25,17 +25,32 @@ On the other hand, with the help of this sample code, you will ***not*** see the
 &rarr; [HowCreated.md](HowCreated.md)
 
 ## How To...
-### Start
-```Batchfile
+### Start & Stop MongoDB
+```powershell
+docker-compose -f .\docker-compose.dev.storage.yml up -d
 docker ps
-docker start mongodb
-docker exec -it mongodb bash
+docker-compose -f .\docker-compose.dev.storage.yml down
+```
+
+### Run Unit & Integration Tests
+1. Start MongoDB
+2. Visual Studio &rarr; **`TrendingCommandService`** solution **&#9655; Run Unit Tests**
+
+### Start
+1. Start MongoDB
+1. Visual Studio: **&#9655; Docker Compose**
+
+### Look Around In MongoDB
+```powershell
+docker-compose -f .\docker-compose.dev.storage.yml run mongodb sh
 ```
 <center> &darr; </center>
 
 ```Bash
 mongo
 ```
+That doesn't work :(
+
 <center> &darr; </center>
 
 ```SQL
@@ -43,25 +58,6 @@ show dbs
 use trendingevents
 db.articleevents.find()
 db.articleevents.find().sort({ $natural: 1 })
-```
-### Stop
-```Batchfile
-docker stop mongodb
-```
-
----
-## Docker Basics
-In a command prompt run as administrator:
-```Batchfile
-docker images
-docker ps -a
-docker exec -it Trending.Command.Api bash
-```
-<center> &darr; </center>
-
-```Bash
-hostname -i
-ls -ln
 ```
 
 ---

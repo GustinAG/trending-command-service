@@ -8,6 +8,7 @@
     <Copyright>(c) Gustin AG 2020</Copyright>
     <RepositoryUrl>https://github.com/GustinAG/trending-command-service</RepositoryUrl>
     <Version>0.0.0.3</Version>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
