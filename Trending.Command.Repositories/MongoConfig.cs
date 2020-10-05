@@ -4,13 +4,13 @@ namespace Trending.Command.Repositories
 {
     public class MongoConfig : IMongoConfig
     {
-        private readonly string _ip;
+        private readonly string _hostName;
 
-        public MongoConfig(string ip)
+        public MongoConfig(string hostName)
         {
-            _ip = ip;
+            _hostName = hostName;
         }
 
-        public string MongoUrl => $"mongodb://{_ip}:27017";
+        public string MongoUrl => $"mongodb://{_hostName}:27017";
     }
 }

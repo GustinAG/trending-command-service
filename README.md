@@ -37,8 +37,12 @@ docker-compose -f .\docker-compose.dev.storage.yml down
 2. Visual Studio &rarr; **`TrendingCommandService`** solution **&#9655; Run Unit Tests**
 
 ### Start
+0. **docker-compose** &rarr; Set as Startup Project
 1. Start MongoDB
+1. `docker stop Trending.Command.Api` - azért, hogy ne akadjon össze vele
 1. Visual Studio: **&#9655; Docker Compose**
+ 2. &rarr; http://localhost:32780 <br />
+    &rarr; http://localhost:32780/swagger
 
 ### Look Around In MongoDB
 ```powershell
