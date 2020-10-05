@@ -1,4 +1,4 @@
-![.NET Core](https://github.com/GustinAG/trending-command-service/workflows/.NET%20Core/badge.svg)
+![.NET Core](https://github.com/GustinAG/trending-command-service/workflows/.NET%20Core/badge.svg)  ![Master docker-compose build](https://github.com/GustinAG/trending-command-service/workflows/Master%20docker-compose%20build/badge.svg)
 
 # trending-command-service
 Trending CQRS Sample - Command microservice
