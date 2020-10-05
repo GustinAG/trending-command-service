@@ -46,14 +46,14 @@ docker-compose -f .\docker-compose.dev.storage.yml down
 
 ### Look Around In MongoDB
 ```powershell
-docker-compose -f .\docker-compose.dev.storage.yml run mongodb sh
+docker ps
+docker exec -it trending-command-service_mongodb_1 bash
 ```
 <center> &darr; </center>
 
 ```Bash
 mongo
 ```
-That doesn't work :(
 
 <center> &darr; </center>
 
