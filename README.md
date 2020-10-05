@@ -1,3 +1,5 @@
+![.NET Core](https://github.com/GustinAG/trending-command-service/workflows/.NET%20Core/badge.svg)
+
 # trending-command-service
 Trending CQRS Sample - Command microservice
 
@@ -39,7 +41,7 @@ docker-compose -f .\docker-compose.dev.storage.yml down
 ### Start
 0. **docker-compose** &rarr; Set as Startup Project
 1. Start MongoDB
-1. `docker stop Trending.Command.Api` - azért, hogy ne akadjon össze vele
+1. `docker stop Trending.Command.Api` - azÃ©rt, hogy ne akadjon Ã¶ssze vele
 1. Visual Studio: **&#9655; Docker Compose**
  2. &rarr; http://localhost:32780 <br />
     &rarr; http://localhost:32780/swagger
