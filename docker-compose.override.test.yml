@@ -1,0 +1,7 @@
+version: '3.5'
+
+services:
+  trending-command-service:
+    image: docker.hvg.hu/hvg/trending-command-service/trending-command-service-api:test
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Test

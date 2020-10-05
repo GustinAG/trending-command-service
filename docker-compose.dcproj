@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.dev.storage.yml" />
+    <None Include="docker-compose.override.test.yml" />
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
   </ItemGroup>
