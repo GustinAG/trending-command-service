@@ -1,0 +1,21 @@
+name: Master docker-compose build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Belépés a github repo registrybe
+      run: docker login -u hvg-dev -p ${{ secrets.HVG_REGISTRY_PWD }} docker.hvg.hu
+    - name: Build docker-compose stack
+      run: docker-compose -f docker-compose.yml -f docker-compose.override.test.yml build
+    - name: Push docker image
+      run: docker-compose -f docker-compose.yml -f docker-compose.override.test.yml push
