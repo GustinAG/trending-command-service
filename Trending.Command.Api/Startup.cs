@@ -22,7 +22,7 @@ namespace Trending.Command.Api
         {
             services.AddTransient<IArticleReadScorer, Scorer>();
             services.AddTransient<IArticlesRepository, ArticlesRepository>();
-            services.AddSingleton<IMongoConfig, LocalDockerMongoConfig>();
+            services.AddSingleton<IMongoConfig, DefaultMongoConfig>();
 
             services.AddControllers();
 

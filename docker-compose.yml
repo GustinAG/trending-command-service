@@ -8,6 +8,8 @@ services:
       dockerfile: Trending.Command.Api/Dockerfile
       args:
         - SDK_VERSION=3.1.301
+    environment:
+      - MONGODB=mongodb://mongodb:27017
     ports:
       - "32780:80"
 

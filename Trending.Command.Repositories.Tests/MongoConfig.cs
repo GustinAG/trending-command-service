@@ -1,6 +1,6 @@
 ﻿using Trending.Command.Contracts;
 
-namespace Trending.Command.Repositories
+namespace Trending.Command.Repositories.Tests
 {
     public class MongoConfig : IMongoConfig
     {
